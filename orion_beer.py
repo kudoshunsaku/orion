@@ -1,5 +1,5 @@
 # orion_beer.py
-# author: kazuhiro fujie
+# author: Shunsaku Kudo
 # date: 2026-01-15
 # fun and learn
 from random import choice
@@ -97,4 +97,5 @@ finally:
 Browse light. Log nothing. Orion.
 Then Beer.
 """
+
 
