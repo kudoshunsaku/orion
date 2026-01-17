@@ -89,7 +89,7 @@ except ValueError as e:
 except Exception as e:
     print(f"An unexpected error occurred: {e}")
 else:
-    print("You may use a", judge, ".")
+    print(f"You may use a '{judge}'.")
 finally:
     print("and Orion Beer.")
 
