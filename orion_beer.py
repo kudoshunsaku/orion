@@ -81,7 +81,7 @@ print("Today's Web browser:", yours)
 
 # Try choosing
 try:
-    judge = choose_browser(yours)
+    browser_type = choose_browser(yours)
 except InternetExplorerError as ie:
     print(f"Please do not use this. {ie}")
 except ValueError as e:
@@ -89,7 +89,7 @@ except ValueError as e:
 except Exception as e:
     print(f"An unexpected error occurred: {e}")
 else:
-    print(f"You may use a '{judge}'.")
+    print(f"You may use a '{browser_type}'.")
 finally:
     print("and Orion Beer.")
 
