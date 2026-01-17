@@ -32,7 +32,7 @@ historical = {
 
     "Navigator",            # Netscape Navigator
     # "Internet Explorer",  # IE (handled explicitly below)
-    
+
     "HotJava",              # built with Java 1.0 alpha;
                             # introduced support for Java applets;
                             # developed by Sun Microsystems
@@ -97,4 +97,3 @@ finally:
 Browse light. Log nothing. Orion.
 Then Beer.
 """
-
