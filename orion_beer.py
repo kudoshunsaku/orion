@@ -1,5 +1,5 @@
 # orion_beer.py
-# author: kudo shunsaku
+# author: kudo shusanku
 # date: 2026-01-15
 # fun and learn
 from random import choice
@@ -52,19 +52,19 @@ class InternetExplorerError(Exception):
     pass
 
 
-def choose_browser(name: str) -> None:
+def choose_browser(name: str) -> str:
     """Classify the browser name and respond accordingly."""
     # Handle IE first to ensure the intended error is raised.
     if name == "Internet Explorer":
-        raise InternetExplorerError("Unsupported browser.")
+        raise InternetExplorerError("Unsupported browser")
     elif name in majors:
-        print("You may use a major browser.")
+        return "Major browser"
     elif name in zero_telemetry:
-        print("You may use a zero-telemetry browser.")
+        return "Zero-telemetry browser"
     elif name in minors:
-        print("You may use a minor browser.")
+        return "Minor browser"
     elif name in historical:
-        print("You may use a historical browser.")
+        return "Historical browser"
     else:
         raise ValueError(f"Unknown browser -> {name!r}")
 
@@ -81,7 +81,7 @@ print("Today's Web browser:", yours)
 
 # Try choosing
 try:
-    choose_browser(yours)
+    judge = choose_browser(yours)
 except InternetExplorerError as ie:
     print(f"Please do not use this. {ie}")
 except ValueError as e:
@@ -89,15 +89,12 @@ except ValueError as e:
 except Exception as e:
     print(f"An unexpected error occurred: {e}")
 else:
-    print("All good, thanks.")
+    print("You may use a", judge, ".")
 finally:
-    print("Orion Beer")
+    print("and Orion Beer.")
 
 """
 Browse light. Log nothing. Orion.
 Then Beer.
 """
-
-
-
 
