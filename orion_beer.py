@@ -52,7 +52,7 @@ class InternetExplorerError(Exception):
     pass
 
 
-def choose_browser(name: str) -> str:
+def judge_dredd(name: str) -> str:
     """Classify the browser name and respond accordingly."""
     # Handle IE first to ensure the intended error is raised.
     if name == "Internet Explorer":
@@ -81,7 +81,7 @@ print("Today's Web browser:", yours)
 
 # Try choosing
 try:
-    browser_type = choose_browser(yours)
+    browser_type = judge_dredd(yours)
 except InternetExplorerError as ie:
     print(f"Please do not use this. {ie}")
 except ValueError as e:
