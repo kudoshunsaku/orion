@@ -13,6 +13,6 @@ I'll try writing some working code.
 It's a game similar to drawing fortunes.
 I think you'll be able to get a feel for the history of browsers.
 
-Have fun.
+Fun and Learn.
 
 https://kudo-shunsaku.hatenadiary.org/entry/2026/01/14/175631
